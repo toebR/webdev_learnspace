@@ -17,7 +17,7 @@
     			<input type="text" name="patty" id="patty">
         </section>
         <hr>
-  <section class="patties">
+        <section class="patties">
           <label for="amount">How many patties would you like?</label>
           <input type="number" name="amount" id="amount">
         </section>
@@ -59,6 +59,34 @@
             <option value="potato">Potato</option>
             <option value="weat">Wheat</option>
           </select>
+          
+        </section>
+
+        <section class="sauce-selection">
+					<label for="sauce">What type of sauce would you like?</label>
+          <input type="text" list="sauces" id="sauce" name="sauce">
+          <!--create datalist for textinput and list attribute that points to datalist id, when form is submitted name of input + string of value or free input text get submitted-->
+					<datalist id="sauces">
+            <option value="ketchup">
+            <option value="mayo">
+            <option value="smokedBBQ">
+          </datalist>
+          
+        </section>
+
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <!--Add your code below-->
+					<textarea id="extra" name="extra" rows="3" cols="40"> Type your extras here
+          </textarea>
+          
+        </section>
+
+        <section class="submission">
+          <!--Add your code below-->
+          <input type="submit" value="Submit">
+          </input>
           
         </section>
         
