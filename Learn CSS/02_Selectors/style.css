@@ -1,0 +1,22 @@
+  /*select by html class = .  | select by html id = # | select by html attribute (like href or else) 0 [attribute] (also works with string pattern search within the attribute definition (e.g. link string in href)*/
+/*pseudo selectors for user interaction are defined with ":" after the selector (e.g. h1:hover {} */
+* {
+    border: 1px solid red;
+  }
+  
+  p {
+    color: green;
+  }
+  
+  h1 {
+    color: maroon;
+  }
+  
+  /*The dot specifies a ruleset selected based on html 'class' attribute - this overrides the global h1 ruleset in this case (title class attribute is within an h1 paragraph in the index.html*/
+  .title {
+    color: teal;
+  }
+
+  h2[class*='destination'] {
+    color: magenta;
+  }
